@@ -3,13 +3,8 @@ $primary: red;
 
 
 
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
  
-body{
-    background-color: $primary;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-}
