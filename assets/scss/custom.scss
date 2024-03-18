@@ -1,10 +1,95 @@
-$primary: red;
-
-
-
-
-
+// $btn-primary: yellow;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
- 
+// global class
+.fs-85 {
+  font-size: 85px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.btn {
+  min-width: 146px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.btn-linear {
+  color: #fff;
+  background: linear-gradient(95.04deg, #ffaa3f 0.82%, #f35b04 97.35%);
+  border: 0;
+  transition: all 0.5s;
+}
+
+.btn-linear:hover {
+  color: #fff;
+  background: linear-gradient(95.04deg, #f35b04 0.82%, #f35b04 97.35%);
+}
+
+// main section
+
+main {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // width: 100%;
+  height: 95vh;
+}
+
+$breakpoint: 768px;
+
+@media (max-width: $breakpoint) {
+  main {
+    height: 75vh;
+  }
+}
+
+section {
+  &.process {
+    .process-card {
+      padding: 50px 17px;
+      text-align: center;
+      min-height: 317px;
+      border-radius: 0 50px 50px 50px;
+      margin: 0px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+
+      &:first-child {
+        background-color: #ffeded;
+      }
+      &:nth-child(2) {
+        background-color: #f9e1ee;
+      }
+      &:nth-child(3) {
+        background-color: #c2e8ff;
+      }
+      &:nth-child(4) {
+        background-color: #bbfff4;
+      }
+      &:last-child {
+        background-color: #e7e6ff;
+      }
+    }
+  }
+}
