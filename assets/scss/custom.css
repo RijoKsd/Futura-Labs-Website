@@ -12101,7 +12101,7 @@ section.choose-us .choose-us-container .choose-card:hover {
   }
 }
 section.place .place-container {
-  background: #D1E1F8;
+  background: #d1e1f8;
   padding: 68px 0 50px;
   border-radius: 25px;
 }
@@ -12115,6 +12115,40 @@ section.place .place-container .place-card {
 section.place .place-container .place-card img {
   width: 30px;
 }
-section.place .place-container .place-card h4, section.place .place-container .place-card .h4, section.place .place-container .place-card p {
+section.place .place-container .place-card h4, section.place .place-container .place-card .h4,
+section.place .place-container .place-card p {
   color: #402060;
+}
+
+section.courses .course-container .course-card {
+  padding: 15px 30px 40px;
+  background: #fff;
+  border-radius: 0px 50px 50px 50px;
+  margin-bottom: 30px;
+  min-height: 310px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+section.courses .course-container .course-card img {
+  width: 140px;
+}
+section.courses .course-container .course-card .course-para {
+  height: 56px;
+  overflow: hidden;
+}
+section.courses .course-container .course-card .course-para p {
+  line-height: 26px;
+}
+section.courses .course-container .course-card .view-more-btn {
+  display: none;
+}
+section.courses .course-container .course-card:hover .course-para {
+  display: none;
+}
+section.courses .course-container .course-card:hover .view-more-btn {
+  display: block;
 }/*# sourceMappingURL=custom.css.map */
