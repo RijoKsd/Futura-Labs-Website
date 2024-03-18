@@ -177,3 +177,33 @@ section {
   }
   
 }
+
+
+//  place section
+
+section{
+  &.place{
+    .place-container{
+     
+          background: #D1E1F8;
+          padding: 68px 0 50px;
+          border-radius: 25px;
+          .place-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            img{
+
+              width: 30px;
+            }
+
+            h4,p{
+              color:#402060;
+            }
+          }
+      
+    }
+  }
+}

@@ -12099,4 +12099,22 @@ section.choose-us .choose-us-container .choose-card:hover {
   section.choose-us .choose-us-container .choose-card {
     min-height: auto;
   }
+}
+section.place .place-container {
+  background: #D1E1F8;
+  padding: 68px 0 50px;
+  border-radius: 25px;
+}
+section.place .place-container .place-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+section.place .place-container .place-card img {
+  width: 30px;
+}
+section.place .place-container .place-card h4, section.place .place-container .place-card .h4, section.place .place-container .place-card p {
+  color: #402060;
 }/*# sourceMappingURL=custom.css.map */
