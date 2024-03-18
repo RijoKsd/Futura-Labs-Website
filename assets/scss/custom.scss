@@ -2,6 +2,12 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// breakpoints
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 // global class
 .fs-85 {
   font-size: 85px;
@@ -53,42 +59,89 @@ main {
   height: 95vh;
 }
 
-$breakpoint: 768px;
-
-@media (max-width: $breakpoint) {
+@media (max-width: $breakpoint-md) {
   main {
-    height: 75vh;
+    height: 80vh;
   }
 }
 
+// process section
 section {
   &.process {
+    .process-card-container {
+      position: relative;
+      div {
+        &:first-child::before {
+          content: "";
+          position: absolute;
+          background: url("../images/dot-arrow1.png") no-repeat left center;
+          left: 15%;
+          bottom: -15%;
+          width: 331px;
+          height: 64px;
+          background-size: 80%;
+        }
+        &:nth-child(2)::before {
+          content: "";
+          position: absolute;
+          background: url("../images/dot-arrow2.png") no-repeat;
+          left: 40%;
+          top: -10%;
+          // bottom:-15%;
+          width: 331px;
+          height: 64px;
+          background-size: 80%;
+        }
+        &:nth-child(3)::before {
+          content: "";
+          position: absolute;
+          background: url("../images/dot-arrow1.png") no-repeat left center;
+          right: 10%;
+          bottom: -15%;
+          width: 331px;
+          height: 64px;
+          background-size: 80%;
+        }
+      }
+    }
+
     .process-card {
       padding: 50px 17px;
       text-align: center;
       min-height: 317px;
       border-radius: 0 50px 50px 50px;
-      margin: 0px 15px;
+      margin: 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       gap: 20px;
+    }
+  }
+}
 
-      &:first-child {
-        background-color: #ffeded;
-      }
-      &:nth-child(2) {
-        background-color: #f9e1ee;
-      }
-      &:nth-child(3) {
-        background-color: #c2e8ff;
-      }
-      &:nth-child(4) {
-        background-color: #bbfff4;
-      }
-      &:last-child {
-        background-color: #e7e6ff;
+// @media (max-width: $breakpoint-lg) {
+// @media (max-width: 1900px) {
+
+//   section {
+//     &.process {
+//       .process-card-container#process-card-container {
+//         > div::before {
+//           display: none;
+
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: $breakpoint-lg) {
+  section {
+    &.process {
+      .process-card-container#process-card-container {
+        div::before {
+          display: none;
+        }
       }
     }
   }

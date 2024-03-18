@@ -12017,33 +12017,57 @@ main {
 
 @media (max-width: 768px) {
   main {
-    height: 75vh;
+    height: 80vh;
   }
+}
+section.process .process-card-container {
+  position: relative;
+}
+section.process .process-card-container div:first-child::before {
+  content: "";
+  position: absolute;
+  background: url("../images/dot-arrow1.png") no-repeat left center;
+  left: 15%;
+  bottom: -15%;
+  width: 331px;
+  height: 64px;
+  background-size: 80%;
+}
+section.process .process-card-container div:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background: url("../images/dot-arrow2.png") no-repeat;
+  left: 40%;
+  top: -10%;
+  width: 331px;
+  height: 64px;
+  background-size: 80%;
+}
+section.process .process-card-container div:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background: url("../images/dot-arrow1.png") no-repeat left center;
+  right: 10%;
+  bottom: -15%;
+  width: 331px;
+  height: 64px;
+  background-size: 80%;
 }
 section.process .process-card {
   padding: 50px 17px;
   text-align: center;
   min-height: 317px;
   border-radius: 0 50px 50px 50px;
-  margin: 0px 15px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
 }
-section.process .process-card:first-child {
-  background-color: #ffeded;
-}
-section.process .process-card:nth-child(2) {
-  background-color: #f9e1ee;
-}
-section.process .process-card:nth-child(3) {
-  background-color: #c2e8ff;
-}
-section.process .process-card:nth-child(4) {
-  background-color: #bbfff4;
-}
-section.process .process-card:last-child {
-  background-color: #e7e6ff;
+
+@media (max-width: 992px) {
+  section.process .process-card-container#process-card-container div::before {
+    display: none;
+  }
 }/*# sourceMappingURL=custom.css.map */
