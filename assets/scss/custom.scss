@@ -120,21 +120,6 @@ section {
   }
 }
 
-// @media (max-width: $breakpoint-lg) {
-// @media (max-width: 1900px) {
-
-//   section {
-//     &.process {
-//       .process-card-container#process-card-container {
-//         > div::before {
-//           display: none;
-
-//         }
-//       }
-//     }
-//   }
-// }
-
 @media (max-width: $breakpoint-lg) {
   section {
     &.process {
@@ -145,4 +130,50 @@ section {
       }
     }
   }
+}
+
+// Why choose us section
+section {
+  &.choose-us {
+    .choose-us-container {
+      .choose-card {
+        background-color: #fff7f0;
+        min-height: 500px;
+        transition: all 0.5s;
+        border-radius: 0px 50px 50px 50px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 45px 25px 18px;
+
+        img {
+          width: 75px;
+        }
+        p {
+          letter-spacing: 0.5px;
+          line-height: 24px;
+          text-align: center;
+        }
+
+        &:hover {
+          outline: 3px solid #d18888;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  section {
+    &.choose-us {
+      .choose-us-container {
+        .choose-card {
+         min-height: auto;
+        }
+      }
+    }
+  }
+  
 }

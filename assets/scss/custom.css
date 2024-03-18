@@ -12070,4 +12070,33 @@ section.process .process-card {
   section.process .process-card-container#process-card-container div::before {
     display: none;
   }
+}
+section.choose-us .choose-us-container .choose-card {
+  background-color: #fff7f0;
+  min-height: 500px;
+  transition: all 0.5s;
+  border-radius: 0px 50px 50px 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 45px 25px 18px;
+}
+section.choose-us .choose-us-container .choose-card img {
+  width: 75px;
+}
+section.choose-us .choose-us-container .choose-card p {
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  text-align: center;
+}
+section.choose-us .choose-us-container .choose-card:hover {
+  outline: 3px solid #d18888;
+}
+
+@media (max-width: 768px) {
+  section.choose-us .choose-us-container .choose-card {
+    min-height: auto;
+  }
 }/*# sourceMappingURL=custom.css.map */
