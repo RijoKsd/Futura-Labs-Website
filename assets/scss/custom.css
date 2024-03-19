@@ -12166,4 +12166,8 @@ section.courses .course-container .course-card:hover .course-para {
 }
 section.courses .course-container .course-card:hover .view-more-btn {
   display: block;
+}
+
+section.contact {
+  background-image: url("../images/bg01.jpg");
 }/*# sourceMappingURL=custom.css.map */
