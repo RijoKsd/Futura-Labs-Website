@@ -12183,4 +12183,24 @@ footer.footer .container .contact-info .contact p i {
 }
 footer.footer .container p a {
   color: #602c93;
+}
+
+.whatsapp img {
+  border-radius: 50%;
+  animation: bubble 2s infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 10px rgba(86, 40, 131, 0.5490196078);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 20px transparent;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 1px rgba(86, 40, 131, 0.5843137255);
+  }
 }/*# sourceMappingURL=custom.css.map */

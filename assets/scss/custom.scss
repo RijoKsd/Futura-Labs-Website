@@ -303,3 +303,33 @@ footer.footer {
     }
   }
 }
+
+// whatsapp icon
+
+.whatsapp{
+  img{
+    border-radius:50%;
+    animation: bubble 2s infinite;
+  
+  }
+}
+
+@keyframes bubble{
+  0%{
+    transform:scale(1);
+    box-shadow: 0px 0px 0px 10px #5628838c;
+
+    
+  }
+  50%{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 0px 20px transparent;
+
+  }
+  100%{
+    transform:scale(1);
+    box-shadow: 0px 0px 0px 1px #56288395;
+
+  }
+
+}
