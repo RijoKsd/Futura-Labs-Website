@@ -209,6 +209,20 @@ section {
 section {
   &.courses {
     .course-container {
+      position: relative;
+
+      &::before{
+        content:"";
+        position: absolute;
+        background-color: #d0c4dc;
+        border-radius: 25px;
+        width: 100%;
+       max-width:1385px;
+        top: 100px;
+        bottom: 150px;
+        margin:0 14px;
+        z-index: -1;
+      }
       .course-card {
         padding: 15px 30px 40px;
         background: #fff;

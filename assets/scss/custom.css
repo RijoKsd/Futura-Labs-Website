@@ -12120,6 +12120,21 @@ section.place .place-container .place-card p {
   color: #402060;
 }
 
+section.courses .course-container {
+  position: relative;
+}
+section.courses .course-container::before {
+  content: "";
+  position: absolute;
+  background-color: #d0c4dc;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 1385px;
+  top: 100px;
+  bottom: 150px;
+  margin: 0 14px;
+  z-index: -1;
+}
 section.courses .course-container .course-card {
   padding: 15px 30px 40px;
   background: #fff;
