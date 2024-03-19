@@ -12170,4 +12170,17 @@ section.courses .course-container .course-card:hover .view-more-btn {
 
 section.contact {
   background-image: url("../images/bg01.jpg");
+}
+
+footer.footer .container .social-handles a {
+  color: #602c93;
+}
+footer.footer .container .location-container .location i {
+  color: #602c93;
+}
+footer.footer .container .contact-info .contact p i {
+  color: #602c93;
+}
+footer.footer .container p a {
+  color: #602c93;
 }/*# sourceMappingURL=custom.css.map */
